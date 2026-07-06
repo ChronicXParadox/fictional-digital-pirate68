@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Display Name Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🎮 Roblox Display Name Generator</h1>
+
+    <div class="result" id="result">
+        Click Generate
+    </div>
+
+    <div class="options">
+
+        <label>
+            <input type="checkbox" id="numbers">
+            Add Numbers
+        </label>
+
+        <label>
+            Number Length
+            <select id="numLength">
+                <option value="1">1 Digit</option>
+                <option value="2">2 Digits</option>
+                <option value="3">3 Digits</option>
+                <option value="4">4 Digits</option>
+            </select>
+        </label>
+
+        <label>
+            Minimum Word Length
+            <input type="number" id="minLength" value="5" min="3" max="15">
+        </label>
+
+        <label>
+            Maximum Word Length
+            <input type="number" id="maxLength" value="10" min="4" max="20">
+        </label>
+
+    </div>
+
+    <button id="generate">
+        Generate
+    </button>
+
+    <button id="copy">
+        Copy
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
